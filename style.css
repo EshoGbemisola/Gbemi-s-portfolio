@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Esho Gbemisola - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js">
+    button id="recommend_btn"
+    </script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Esho Gbemisola
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          eshoeniola98@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#Skills">Skills</a>
+          <a class="topmenu" href="#Projects">Projects</a>
+          <a class="topenu" href="#Recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/photo/2016/05/30/14/23/detective-1424831_1280.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, Esho Gbemisola <img src="https://cdn.pixabay.com/photo/2016/05/30/14/23/detective-1424831_1280.png" width="60px"/>
+          </h1>
+          <p>
+            I am a beginner backend developer with no years of experience.
+            I am excited about this journey and I become great at this. 
+            I am an avid use of Vscode and I have practised developing a pizzeria website
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://download.logo.wine/logo/Java_(programming_language)/Java_(programming_language)-Logo.wine.png">
+            <h6>Java</h6>
+            <p>4 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="https://e7.pngegg.com/pngimages/603/759/png-clipart-css3-cascading-style-sheets-logo-html-world-wide-web-blue-angle-thumbnail.png">
+            <h6>Css</h6>
+            <p>1 year experience</p>
+        </div>
+        <div class="skill">
+            <img src="https://e7.pngegg.com/pngimages/306/37/png-clipart-node-js-logo-node-js-javascript-web-application-express-js-computer-software-others-miscellaneous-text-thumbnail.png">
+            <h6>Node js</h6>
+            <p>2 years experience</p>
+        </div>
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Pizzeria Website</h3>
+            <ul>
+              <li>As a beginner, while practising; I developed a Pizzeria shop website integrated with cart box, and delivery options using Html and Css</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Profile</h3>
+            <ul>
+              <li>Wrote a profile using Html tags.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Fabric Website</h3>
+            <ul>
+              <li>Created a styled multi-page website for a fabric store and integrated it with a shopping cart, using paystack for payment gateway</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Gbemisola is a very hardworking and a fast learner in web development
+          She got a superb team spirit attitude with an excellent spirit.  
+          Anyone would want her on their team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Gbemisola has been a blessing. 
+          She is highly knowledgable and always goes the extra step to make sure everyone and everything is right. 
+          I would definitely want to work with her again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I have worked along with Gbemisola for 3 years and during this time, she even added more knowledge.
+          She will be an asset for any organisation! 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Gbemisola is just the best!
+            <span>&#8221;</span>
+      </div>
+
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendations showPopup(true)";>Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for leaving a recommendation/h3>
+      <button onclick="showPopup(true);">Ok</button>
+    </div>
+  </body>
+</html>
